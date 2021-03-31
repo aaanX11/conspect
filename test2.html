@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulas</title>
+    <style>
+        .wide-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .wide-img-comp {
+            height: 400px;
+        }
+
+        .form-block {
+            background: khaki;
+        }
+
+        .form-in-line {
+            display: inline-block;
+            background: lawngreen;
+        }
+
+        pre {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <article class="card" id="BookNameCh1">
+            <img class="wide-img-comp" src="./bin/470276_900.png">
+            <div class="card-body">
+                <h5 class="card-title">Book name</h5>
+                <p class="card-text-intro">My paragrap is about dogs + pigs</p>
+                <p class="card-text">
+                    When <span class="form-in-line"> \(a \ne 0\)</span>, there are two solutions to <span
+                        class="inline">\(ax^2 + bx + c = 0\)</span> and they are
+                    <p class="form-block">\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]</p>
+                </p>
+                <pre>
+                    OLO
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error excepturi ipsa, dicta tempore porro saepe deserunt, in odit earum exercitationem laboriosam voluptate tenetur distinctio. Corporis, provident. Et sapiente illum facere!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim eos repellat dicta voluptate, vero doloremque illo aut rerum voluptatibus dignissimos nemo alias perspiciatis ullam debitis sequi labore nam temporibus!
+                            TRRR
+                                    Bah BAh
+                </pre>
+            </div>
+        </article>
+
+        <article class="card">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </article>
+
+    </div>
+    <!--/.container-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let  tArr =[]; let tStr='';
+            $(".card-title").each(
+                function(){tArr.push($(this).text())}
+            );   
+        });
+        window.print();
+    </script>
+</body>
+
+</html>
